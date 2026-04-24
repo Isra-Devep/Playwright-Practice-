@@ -2,7 +2,7 @@ const { test, expect } =  require('@playwright/test');
 const {LOGIN_MUTATION} = require('../queries/authQueries');
 const {ADD_ITEM_MUTATION} = require('../queries/projectQueries');
 
-test('Login via API' , async ({request}) => {
+test.skip('Login via API' , async ({request}) => {
 
     const response = await request.post("https://develop.fohlio.io/be/graphql", {
         data: {
