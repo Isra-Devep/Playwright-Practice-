@@ -2,7 +2,7 @@ const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
     use: {
-        headless: false,
+        headless: process.env.CI === 'true',
         slowMo: 1500,
     }
 });
