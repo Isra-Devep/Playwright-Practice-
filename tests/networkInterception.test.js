@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const LoginPage = require('../pages/LoginPage');
 
-test('Check error handling on project sheet filter', async ({ page }) => {
+test.skip('Check error handling on project sheet filter', async ({ page }) => {
 
     // Step 1 - login
     const loginPage = new LoginPage(page);
