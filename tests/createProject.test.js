@@ -5,13 +5,13 @@ test.use({ storageState: 'state.json' });
 test('Create project', async ({page})=>{
     const createProjectPage = new CreateProjectPage(page);
     await createProjectPage.visit();
-    await createProjectPage.createProject("ISRA TEST PROJECT 2");
+    await createProjectPage.createProject(`ISRA TEST PROJECT  ${Date.now()}`);
 
 });
 
 test('Create project 2 ', async ({page})=>{
     const createProjectPage = new CreateProjectPage(page);
     await createProjectPage.visit();
-    await createProjectPage.createProject("ISRA TEST PROJECT 3");
+    await createProjectPage.createProject(`ISRA TEST PROJECT  ${Date.now()}`);
 
 });
