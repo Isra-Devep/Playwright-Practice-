@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Auth & secrets (generate locally via auth.setup.test.js)
+.env
+state.json
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Optional local artifacts
+_artifacts/
